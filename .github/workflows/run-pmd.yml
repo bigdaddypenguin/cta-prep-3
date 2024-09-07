@@ -14,4 +14,4 @@ jobs:
     - name: Setup PMD
       uses: legetz/setup-pmd@7.1.0
     - name: APEX full scan
-      run: pmd check --dir ./force-app/main/default/classes/*.cls --rulesets ./default-ruleset.xml -f text
+      run: pmd check --dir ./force-app/main/default/classes/*.cls --rulesets ./config/pmd/rulesets/default-ruleset.xml
